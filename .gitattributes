@@ -1,6 +1,1 @@
-* linguist-vendored 
-* .HTML linguist-vendored = false
-
-
-
-
+*.rb linguist-language=Java
