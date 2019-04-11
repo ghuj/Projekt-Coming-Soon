@@ -1,5 +1,5 @@
-* .java linguist-detectable = false
-* .js linguist- linguist-detectable = false 
-* .html  detectable = true 
+* .java linguist-detectable = true 
+* .js linguist-detectable = false 
+* .html linguist- detectable = false 
 * .xml linguist-detectable = false
 
