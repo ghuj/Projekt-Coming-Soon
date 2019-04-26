@@ -3,59 +3,95 @@
 html, body
   margin: 0
   padding: 0
-  max-width: 900px 	
+  //max-width: 900px 	
   width: 100%
   height: 100%
-  overflow: hidden
+  //overflow: hidden
 
-#hintergrund
-  background-image: url("../img/street.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  position: absolute
-  z-index: 1
+section
+  //max-width: 1010px
   width: 100%
-  height: 100%
+  height: 90%
+  position: relative  
+  display: table    
+  //ackground-color: pink
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
 
-.background
-  width: 100%
-  height: 100%
-  background: rgba(9, 53, 73, 0.78)
+  .container
+    position: relative
+    min-height: 90vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: linear-gradient(to bottom, rgba(9, 53, 73, 0.78) 50%, rgba(9, 53, 73, 0.78) 100%), 
+    url("../img/street.jpg")
+    background-size: cover        
+ 
+  #content  
+    background-image: url(../img/clock.gif)
+    background-size: contain
+    background-repeat: no-repeat
+    position: relative
+    //display: table-cell
+    width: 400px
+    height: 65% 
+    margin: 0 auto 
+    padding: 5% 5%    
+    font-weight: 100
+    line-height: 2.3
+    z-index: 2
+    h3
+      
+      font-weight: bold
+      text-transform: uppercase
+      letter-spacing: 0.2em
+      color: white
+      font-size: 2.0em 
+      text-align: center
+    h2
+      
+      color: white
+      font-size: 4.0em
+      text-align: center  
 
-#content  
-  background-image: url(../img/clock.gif)
-  background-size: cover
-  background-repeat: no-repeat
-  position: absolute
-  width: 5%
-  height: 5%
-  top: 10%
-  left: 30%
-  padding: 20% 20%
-  margin: 2% 2%
-  z-index: 2
+  .content-scroll  
+    height: 50%
+    width: 100%
+    background-color: #2e3842
 
-.inhalt  
-  position: absolute 
-  font-weight: 100
-  line-height: 2.3
-  top: 15%
-  left: 20%
-  z-index: 10
-  h3
-    font-family: Futura 
-    color: white
-    font-size: 1.8em
-    text-align: center
-  h2
-    color: white
-    font-size: 2.8em
-    text-align: center  
+  .icon-scroll
+    position: absolute
+    left: 50%
+    top: 2%
+    transform: translateX(-50%)
+    &::before
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      content: ''
+      width: 8px
+      height: 8px
+      background: #FFF
+      margin-left: -4px
+      top: 15px
+      border-radius: 50%
+      animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
+    width: 40px
+    height: 70px
+    border: 2px solid #FFF
+    border-radius: 25px
+    cursor: pointer
+    bottom: 2rem
 
+@keyframes scroll
+  0%
+    opacity: 0
+    transform: translateY(0) scale(0.5)
 
-/* nur f�r das Aussehen, kann ver�ndert werden:
+  10%
+    opacity: 1
+    transform: scale(1)
 
-body
-  font-family: arial, sans-serif
-  font-weight: bold
-  //color: #900
+  100%
+    opacity: 0
+    transform: translateY(30px) scale(0.5)
