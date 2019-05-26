@@ -6,7 +6,8 @@ Version: 3.0
 Datum: 26.05.2019
 
 !Sketch Wireframe: 
-(https://github.com/ghuj/Projekt-Coming-Soon/build/assets/img/Projekt-Comming-Soon.jpg)
+https://github.com/ghuj/Projekt-Coming-Soon/blob/master/build/assets/img/Comming-Soon.jpg
+
 
 ## Template
 I use devtips starter kit for the project. 
