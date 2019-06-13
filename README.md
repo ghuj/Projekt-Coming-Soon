@@ -5,7 +5,8 @@ Projet at Work
 Version: 3.0
 Datum: 26.05.2019
 
-!Sketch Wireframe: (https://github.com/ghuj/Projekt-Coming-Soon/master/assets/img/starter-kit-cover.jpg)
+## Sketch Wireframe
+https://github.com/ghuj/Projekt-Coming-Soon/blob/master/build/assets/img/Comming-Soon.jpg
 
 ## Template
 I use devtips starter kit for the project. 
