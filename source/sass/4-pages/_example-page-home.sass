@@ -2,20 +2,16 @@
 
 html, body
   margin: 0
-  padding: 0
-  //max-width: 900px 	
+  padding: 0  
   width: 100%
   height: 100%
   //overflow: hidden
 
-section
-  //max-width: 1010px
+section  
   width: 100%
-  height: 90%
-  position: relative  
-  display: table    
-  //ackground-color: pink
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
+  height: auto
+  position: relative        
+  //box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
 
   .container
     position: relative
@@ -31,12 +27,11 @@ section
     background-image: url(../img/clock.gif)
     background-size: contain
     background-repeat: no-repeat
-    position: relative
-    //display: table-cell
-    width: 400px
-    height: 65% 
-    margin: 0 auto 
-    padding: 5% 5%    
+    position: relative    
+    width: 555px
+    height: 610px
+    margin: 12px auto 
+    padding: 7% 5%    
     font-weight: 100
     line-height: 2.3
     z-index: 2
@@ -46,23 +41,24 @@ section
       text-transform: uppercase
       letter-spacing: 0.2em
       color: white
-      font-size: 2.0em 
+      font-size: 2.5em 
       text-align: center
     h2
       
       color: white
-      font-size: 4.0em
+      font-size: 4.5em
       text-align: center  
 
-  .content-scroll  
-    height: 50%
-    width: 100%
-    background-color: #2e3842
+  .content-scroll
+    position: absolute
+    top: 85%  
+    height: 15%
+    width: 100%    
 
   .icon-scroll
     position: absolute
     left: 50%
-    top: 2%
+    top: 21%
     transform: translateX(-50%)
     &::before
       position: absolute
@@ -95,3 +91,60 @@ section
   100%
     opacity: 0
     transform: translateY(30px) scale(0.5)
+
+article  
+  background: #fff
+  font-family: 'Lato', sans-serif
+  color: #0E2E47
+  text-align: center
+
+.col1
+  width: 450px
+  margin: 7% auto
+  h2
+    font: 33px sans-serif
+    //margin-top: 30px
+    margin: 30px 30% 30px 30%
+    position: relative    
+    text-transform: uppercase
+    z-index: 1
+    &:before
+      border-top: 2px solid green
+      content: ""
+      margin: 0 auto
+      position: absolute
+      top: 40px       
+      width: 40px
+      z-index: -1
+      justify-content: start
+    span
+      background: #bada55
+      padding: 0 10px
+
+.col2
+  width: auto
+  height: 200px
+  padding: 1% 10% 0 10%
+  margin-top: 7px 
+  background-color: #fff
+  h2
+    font: 33px sans-serif
+    //margin-top: 30px
+    margin: 30px 30% 30px 30%
+    position: relative    
+    text-transform: uppercase
+    z-index: 1
+    &:before
+      border-top: 2px solid green
+      content: ""
+      margin: 0 auto
+      position: absolute
+      top: 40px       
+      width: 40px
+      z-index: -1
+      justify-content: start
+    span
+      background: #bada55
+      padding: 0 10px
+
+  
