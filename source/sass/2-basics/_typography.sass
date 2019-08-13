@@ -1,9 +1,23 @@
 //	Headings
-
-.gigantic, .huge, .large, .bigger, .big,
+.huge
 h1, h2, h3, h4, h5, h6
-  color: #222
-  font-weight: bold
+  font: 33px sans-serif  
+  margin: 30px 30% 30px 30%
+  position: relative    
+  text-transform: uppercase
+  z-index: 1
+  &:before
+    border-top: 2px solid green
+    content: ""
+    margin: 0 auto
+    position: absolute
+    top: 40px       
+    width: 40px
+    z-index: -1
+    justify-content: start
+    span
+      background: #bada55
+      padding: 0 10px
 
 .gigantic
   font-size: 110px
@@ -35,7 +49,7 @@ h1, h2, h3, h4, h5, h6
 // Basic Text Style
 
 p
-  margin: 0 0 20px 0
+  margin: 0 0 20px 0  
 
 em
   font-style: italic
