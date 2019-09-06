@@ -1,0 +1,82 @@
+.header
+  position: absolute
+  top: 0px
+  width: 100%
+  height: 80px
+  overflow: hidden
+  padding: 3px 0 15px
+  display: flex 
+  
+.logo
+  width: 326px
+  height: 95px
+  //background:
+    image: url(../img/logo.jpg)
+    size: Contain
+    repeat: no-repeat
+    text-indent: -9999px
+    overflow: hidden    
+    a
+      display: block
+      height: 100%
+
+.navbar
+  width: 100%
+  margin: 21px -3px 0 0  
+  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  text-align: end
+  letter-spacing: -1px
+  background-color: 
+  display: inline-block
+  overflow: hidden
+  ul 
+    //background-color: blue
+    display: inline-block
+  li   
+    padding: 0 20px 0 0
+    display: inline-block
+  a
+    margin: 10px
+    text-decoration: none
+    &:hover
+      color: #fff
+  .active a
+    color: #fff
+
+//#lang
+  position: absolute
+  right: -10px
+  top: 130px
+  font: 14px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif        
+
+.footer  
+  overflow: hidden  
+  color: #FFFFFF 
+  width: 100%
+  height: 30px
+  overflow: hidden    
+  padding: 15px 0 15px
+  border-top: 1px solid #cbc4b2
+  border-bottom: 1px solid #cbc4b2
+  text-align: start
+  z-index: 3
+
+@media (max-width: 960px)
+
+  .header
+    height: 100%
+    padding: 0px
+    display: inline  
+    flex: 25%
+  
+  .logo
+    background: 
+      size: Contain
+      repeat: no-repeat
+      
+  .navbar  
+    display: inline
+    width: 5%
+    height: 5%
+    
