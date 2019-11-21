@@ -18,11 +18,18 @@ form
   line-height: 1.3em
   margin: -2px 0 45px
 
-.input  
-  width: 600px
+.input 
+  max-width: 600px  
   display: flex
   margin: 0 30% 0 30%
   align-items: center
+
+@media (max-width: 720px)
+  .input
+    margin: 0px 0px  
+  
+  .description  
+    font-size: 7px
 
 .button
   height: 44px
