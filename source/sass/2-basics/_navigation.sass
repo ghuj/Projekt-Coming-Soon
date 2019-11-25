@@ -8,6 +8,7 @@
   display: flex 
   
 .logo
+  display: grid
   width: 326px
   height: 95px  
   margin: 20px 20px 0 20px
@@ -17,7 +18,17 @@
     repeat: no-repeat
     text-indent: -9999px
     overflow: hidden    
-      
+
+@media (max-width: 720px)  
+  .logo
+    position: absolute
+    width: 100%
+    top: 5%
+    right: 20%
+    left: 20%
+    justify-content: center
+    margin: 0px
+
 .navbar
   width: 100%
   margin: 21px -3px 0 0  
