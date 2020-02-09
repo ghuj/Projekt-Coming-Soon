@@ -1,0 +1,89 @@
+*
+  box-sizing: border-box
+
+\::-moz-selection, ::selection
+  background: #F34A4E
+  color: #FFF
+
+html, body
+  //margin: 0
+  //padding: 0
+  font-family: sans-serif
+  font-size: 1em
+  line-height: 1.5
+ 
+.sr-only
+  clip: rect(1px, 1px, 1px, 1px)
+  position: absolute
+  height: 1px
+  width: 1px
+  overflow: hidden
+
+.main-header
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1)
+
+.mh-logo
+  width: 226px
+  height: 95px
+  background: 
+    image: url(../img/logo.jpg)
+    size: Contain
+    repeat: no-repeat
+  margin: 0 0 -10px
+
+.main-nav
+  a
+    font-size: 1em
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    color: $white
+    text-decoration: none
+
+  ul
+    margin: 0
+    padding: 0
+
+
+/**
+ * Flex & layout things:
+ * — Mobile first
+ * — Responsive
+
+img
+  max-width: 100%
+  height: auto
+
+.container
+  width: 960px
+  height: 180px
+  max-width: 100%
+  padding: 0px
+  margin: 0 auto
+  margin-bottom: -50px
+
+.main-header .container
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+
+.main-nav
+  ul
+    margin: 1em 0 .5em
+    text-align: center
+
+  li
+    display: inline
+
+  a
+    display: inline-block
+    padding: .5em 1.5em
+
+@media (min-width: 960px)
+  .main-header .container
+    justify-content: space-between
+
+@media (max-width: 960px) 
+  .main-header .container
+    margin-bottom: 30px
