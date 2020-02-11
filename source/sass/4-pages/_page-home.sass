@@ -20,21 +20,23 @@ section
   justify-content: center
   background-image: linear-gradient(to bottom, rgba(9, 53, 73, 0.78) 50%, rgba(9, 53, 73, 0.78) 100%), 
   url("../img/street.jpg")
-  background-size: cover        
+  background-size: cover  
+  padding: 125px     
  
   #content  
+    position: relative      
+    box-sizing: border-box
     background-image: url(../img/clock.gif)
     background-size: contain
-    background-repeat: no-repeat
-    position: relative    
-    width: 555px
-    height: 550px
-    margin: 6% auto 
+    background-repeat: no-repeat      
+    width: 800px
+    height: 844px
     padding: 7% 5%    
     font-weight: 100
     line-height: 2.3
-    z-index: 2
     color: #fff
+    
+
 
 .content-scroll
     position: absolute
@@ -79,13 +81,6 @@ section
     opacity: 0
     transform: translateY(30px) scale(0.5)
 
-@media (max-width: 720px)
-
-  #content  
-    //background: tomato
-    margin: 180% auto
-
-
 article  
   background: #fff
   font-family: 'Lato', sans-serif
@@ -124,4 +119,7 @@ nav
     text-align: center
     background-color: $black    
     
-@media screen and(max-width:)      
+@media (max-width: 960px)   
+
+  #content
+    margin-top: 50px
