@@ -2,8 +2,8 @@
 
 Projet at Work 
 
-Version: 3.0
-Datum: 26.05.2019
+Version: 0.7.0 </br>
+Datum: 11.02.2020 </br>
 
 
 
